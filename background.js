@@ -3,7 +3,7 @@
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   if (
     changeInfo.status === "complete" &&
-    tab.url.includes("https://www.youtube.com/")
+    tab.url.includes("https://paste+your+link+here") // Adjust URL as needed where the popup will be triggered
   ) {
     // Delay sending message to ensure content script is ready
     setTimeout(() => {

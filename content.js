@@ -92,7 +92,7 @@ function createPopup() {
   `;
   ignoreButton.textContent = "Go to Task list";
   ignoreButton.addEventListener("click", function () {
-    window.location.href = "https://chatgpt.com/";
+    window.location.href = "https://paste+your+link+here"; // Adjust URL as needed to your task list
   });
   buttonContainer.appendChild(ignoreButton);
 
