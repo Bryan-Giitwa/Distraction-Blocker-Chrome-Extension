@@ -3,13 +3,22 @@
   "name": "Bryan Super Power Extension",
   "version": "1.0",
   "description": "Helps you stay focused by prompting you to refocus when visiting distracting websites.",
+  "permissions": ["tabs", "activeTab"],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
       "js": ["content.js"]
     }
   ],
-  "browser_action": {
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
     "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }
